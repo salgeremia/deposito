@@ -1,4 +1,5 @@
 num = 81 
+# aggiungo un commento
 
 print('\nmetodo iterativo definito')
 eccesso = num
