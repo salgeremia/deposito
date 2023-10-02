@@ -10,3 +10,5 @@ def harmonic(n):
 # Esempio di utilizzo
 f = harmonic(10)
 print(f)
+
+# Aggiungere doctest
