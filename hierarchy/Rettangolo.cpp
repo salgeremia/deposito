@@ -22,23 +22,16 @@ public:
     }
 };
 
-class Quadrato
+class Quadrato : public Rettangolo
 {
 private:
     int lato;
 public:
-    int area()
-    {
-        return lato*lato;
-    }
-    int perimetro()
-    {
-        return lato*4;
-    }
-    Quadrato(int pLato)
+    Quadrato(int pLato) : Rettangolo(pLato, pLato)
     {
         lato = pLato;
     }
+
 };
 
 int main()
