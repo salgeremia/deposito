@@ -6,7 +6,7 @@ def word_converter(word_lower_case):
         if 97 <= value <= 122:
             word_upper_case += chr(value-32)
         else:
-            return '*'*len(word_lower_case)
+            word_upper_case += char
     return word_upper_case
 
 
