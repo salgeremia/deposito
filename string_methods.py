@@ -1,9 +1,8 @@
-a = 'pROva A!'
-b = 'pROva B!'
+a = 'proVA un TES7o'
 
 a = a.upper() 
-b.upper()
 
-print(a, b)
+print(a)
 
 
+# https://www.jitbit.com/screensharing/#5019613257673063681
