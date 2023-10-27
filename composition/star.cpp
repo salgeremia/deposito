@@ -1,4 +1,4 @@
-/* https://www.jitbit.com/screensharing/#9026157028323334145
+/* 
 Realizza la classe Stella, composta da oggetti 
 della classe Pentagono e oggetti della classe Triangolo. 
 Le classi Pentagono e Triangolo sono entrambe figlie 
@@ -19,7 +19,6 @@ ATTRIBUZIONE DEI PUNTEGGI
 5. leggibilità del codice = 10 pt
 - - - - - - - - - - - - - - - - - - - - - - - - - - 
 */
-
 
 #include <iostream>
 
