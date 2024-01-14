@@ -1,17 +1,28 @@
 import random
 
-print(10*'o')                   # stampa palloncini
-bomb = random.randint(1,10)     # genera la bomba
+def print_balloons():
+    print('|', ' '.join(balloons), '|', end='')
+
+balloons = ['O']*10
+bomb = random.randint(1,10)
+popped = set()
 alive = True
 
-for _ in range(5):              # per 5 volte...
-    choice = int(input('Quale palloncino vuoi scoppiare? '))
-    if choice == bomb:
-        alive = False
-        print('ESPLOSO!')
-        break
+while len(popped) < 5:
+    print_balloons()
+    choice = int(input(' -> '))
+    if choice not in popped:
+        if choice == bomb:
+            alive = False
+            balloons[choice-1] = '*'
+            print_balloons()
+            print('\n\n*** GAME OVER ***')
+            break
+        popped.add(choice)
+        balloons[choice-1] = '_'
 
-if alive:                       # se il giocatore è ancora vivo
-    print('HAI VINTO.')
-    print('La BOMBA si trova in posizione', bomb)
+if alive:
+    print_balloons()
+    print('\n\n>>>> You WIN! <<<<')
+    print('Bomb position:', bomb)
 
