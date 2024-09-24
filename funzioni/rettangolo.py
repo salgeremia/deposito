@@ -7,7 +7,9 @@ def area(base, altezza):
 def diagonale(base, altezza):
     return (base**2 + altezza**2)**0.5
 
-b, h = 4, 5
+
+# MAP -> https://realpython.com/python-map-function/
+b, h = map(int, input().split())
 p = perimetro(b, h)
 a = area(b, h)
 d = diagonale(b, h)
