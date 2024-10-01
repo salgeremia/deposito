@@ -4,7 +4,7 @@ import time
 
 i = 1
 print('#p\ttime')
-while i <= 7: # i should be less than 9
+while i <= 8: # i should be less than 9
     tic = time.time()
     n = 10**i
     x = [random.random() for _ in range(n)]
