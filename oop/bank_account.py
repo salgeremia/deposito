@@ -13,13 +13,12 @@ class BankAccount:
         return self.__balance
     
     def deposit(self, amount: float) -> None:
-        self.set_balance(self.get_balance() + amount) 
+        self.__balance += amount
 
     def withdraw(self, amount: float) -> None:
-        self.set_balance(self.get_balance() - amount) 
+        self.__balance -= amount
 
     
-
 ba = BankAccount(0, 'Geremia')
 ba.deposit(1048.50)
 ba.withdraw(420)
