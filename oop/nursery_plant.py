@@ -11,6 +11,7 @@ class NurseryPlant:
         + transplant(pot_size: int) -> None
         + sell() -> None
         + get_plant_info() -> str 
+        _____________________________________________________
     '''
     def __init__(self, plant_id: int, name: str) -> None:
         self.plant_id = plant_id
