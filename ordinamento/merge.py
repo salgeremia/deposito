@@ -1,22 +1,25 @@
-a = [1, 4, 6]
-b = [2, 5, 7]
-c = list()
+def merge(one: list[int], two: list[int]):
+    result = list()
+    i, j = 0, 0
+    while i < len(one) and j < len(two):
+        if one[i] < two[j]:
+            result.append(one[i])
+            i += 1
+        else:
+            result.append(two[j])
+            j += 1
+    
+    if i == len(one):
+        for e in two[j:]:
+            result.append(e)
+    
+    if j == len(two):
+        for e in one[i:]:
+            result.append(e)
 
-i, j = 0, 0
-while i < len(a) and j < len(b):
-    if a[i] < b[j]:
-        c.append(a[i])
-        i += 1
-    else:
-        c.append(b[j])
-        j += 1
+    return result
 
-if i < len(a):
-    for e in a[i:]:
-        c.append(e)
 
-if j < len(b):
-    for e in b[j:]:
-        c.append(e)
-
-print(c)
+a = [2, 4, 6]
+b = [1, 3, 5]
+print(merge(a, b))
