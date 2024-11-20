@@ -22,7 +22,6 @@ def merge_sort(v: list[int]):
         med = len(v) // 2
         l = v[:med]
         r = v[med:]
-        print(l, r)
         sorted_left = merge_sort(l)
         sorted_right = merge_sort(r)
         return merge(sorted_left, sorted_right)
