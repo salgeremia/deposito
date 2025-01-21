@@ -3,12 +3,13 @@ m = [[0, 0, 0, 0],
      [2, 2, 2 ,2],
      [3, 3, 3, 3]]
 
-for i in range(4):
-    for j in range(4):
-        print(m[i][j], end=' ')
+dim = 4
+
+for row in range(dim):
+    for col in range(dim):
+        print(m[row][col], end=' ')
     print()
 print()
-
 
 for row in m:
     for i in row:
