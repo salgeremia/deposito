@@ -8,14 +8,19 @@ class Cat:
     def meow(self) -> None:
         print('meooow')
 
+    # setter method: used to set or modify the value of __name
     def change_name(self, new_name: str) -> None:
         self.__name = new_name
+    
+    # getter method: used to retrieve the value of __name
+    def get_name(self) -> str:
+        return self.__name
 
 
 c = Cat('Sibilla')
 print(c)
-c.meow()                # Sibilla meows...
-c.change_name('Pepe')   # change cat's name from "Sibilla" to "Pepe"
+c.meow()                    # Sibilla meows...
+c.change_name('Pepe')       # change cat's name from "Sibilla" to "Pepe"
 print(c)
 
 # let's try changing the cat's name in another way
@@ -24,6 +29,12 @@ print(c)
 # as you can see, it doesn't work!
 
 # even though a (dangerous) way exists:
+'''
 c._Cat__name = 'Trilly'
 print(c)
+'''
 # now that you know, forget it.
+
+c.change_name('Trilly')
+cat_name = c.get_name()
+print('Actual cat name:', cat_name)
