@@ -23,8 +23,3 @@ def sentinel_linear_search(v, value):
                                 # _____     _____       _____
 # FUNZIONE DI COSTO        T(n) = 3n + 3    4           
 
-# i  0  1  2  3  4  5
-v = [3, 5, 9, 1, 2, 6]
-w = [3, 5, 1, 9, 2, 6]
-value = 9
-print(linear_search(v, value))

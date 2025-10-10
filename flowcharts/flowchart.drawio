@@ -1,6 +1,6 @@
 <mxfile host="65bd71144e">
     <diagram id="GtfJnqBTB9R5LkeS6J8F" name="SEQUENZA">
-        <mxGraphModel dx="745" dy="430" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" background="none" math="0" shadow="0">
+        <mxGraphModel dx="632" dy="489" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" background="none" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
@@ -79,14 +79,14 @@
                 <mxCell id="39" value="il 5% di un valore è pari al valore moltiplicato per 5 e diviso per 100, quindi 1/20" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;fontColor=#000000;darkOpacity=0.05;fillColor=#FFF9B2;strokeColor=none;fillStyle=solid;direction=west;gradientDirection=north;gradientColor=#FFF2A1;shadow=1;size=20;pointerEvents=1;fontSize=20;labelBackgroundColor=none;" parent="1" vertex="1">
                     <mxGeometry x="40" y="690" width="330" height="100" as="geometry"/>
                 </mxCell>
-                <mxCell id="40" value="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#9;&lt;/span&gt;1 km = 1000 m&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#9;&lt;/span&gt;1 h = 3600 s&lt;/span&gt;&lt;/div&gt;&lt;br&gt;per convertire i km/h in m/s bisogna moltiplicare per 1000 e dividere per 3600, quindi&lt;br&gt;1 km/h = 1000 m / 3600 s =&lt;br&gt;10 m / 36 s = 5 m / 18 s" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;fontColor=#000000;darkOpacity=0.05;fillColor=#FFF9B2;strokeColor=none;fillStyle=solid;direction=west;gradientDirection=north;gradientColor=#FFF2A1;shadow=1;size=20;pointerEvents=1;fontSize=20;" parent="1" vertex="1">
+                <mxCell id="40" value="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;1 km = 1000 m&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;1 h = 3600 s&lt;/span&gt;&lt;/div&gt;&lt;br&gt;per convertire i km/h in m/s bisogna moltiplicare per 1000 e dividere per 3600, quindi&lt;br&gt;1 km/h = 1000 m / 3600 s =&lt;br&gt;10 m / 36 s = 5 m / 18 s" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;fontColor=#000000;darkOpacity=0.05;fillColor=#FFF9B2;strokeColor=none;fillStyle=solid;direction=west;gradientDirection=north;gradientColor=#FFF2A1;shadow=1;size=20;pointerEvents=1;fontSize=20;" parent="1" vertex="1">
                     <mxGeometry x="470" y="690" width="310" height="210" as="geometry"/>
                 </mxCell>
             </root>
         </mxGraphModel>
     </diagram>
     <diagram id="IuZWsZIN5ZxVNr7IToaY" name="CONDIZIONE">
-        <mxGraphModel dx="745" dy="430" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+        <mxGraphModel dx="797" dy="534" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
@@ -222,7 +222,7 @@
         </mxGraphModel>
     </diagram>
     <diagram id="qNfqXTCU4DnNbIciWr5D" name="ITERAZIONE">
-        <mxGraphModel dx="1254" dy="761" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+        <mxGraphModel dx="1381" dy="763" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
