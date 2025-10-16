@@ -1,4 +1,3 @@
-# https://www.jitbit.com/screensharing/#4482707301447075508
 '''
 1. Numero pari o dispari
 Scrivi un programma che chieda all’utente un numero intero (variabile n) 
@@ -9,3 +8,16 @@ if n%2 == 0:
     print('-> NUMERO PARI')
 else:
     print('-> NUMERO DISPARI')
+
+'''
+2. Maggiorenne o minorenne
+Scrivi un programma che chieda all’utente la sua età (variabile e), 
+successivamente stampi a video uno dei seguenti messaggi:
+- "Puoi entrare" se ha almeno 18 anni,
+- "Accesso negato" altrimenti.
+'''
+e = int(input('> inserire età: '))
+if e >= 18:
+    print('Puoi entrare')
+else:
+    print('Accesso negato')
