@@ -13,14 +13,15 @@ a = int(input('a = '))
 b = int(input('b = '))
 c = int(input('c = '))
 
+# SOLUZIONE 1: and
 if a == b and b == c:
     print('-> EQUILATERO')
-elif a != b and b != c:
+elif a != b and a != c and b != c:
     print('-> SCALENO')
 else:
     print('-> ISOSCELE')
 
-# SOLUZIONE ALTERNATIVA (or)
+# SOLUZIONE 2: and, or
 if a == b and b == c:
     print('-> EQUILATERO')
 elif a == b or a == c or b == c:
