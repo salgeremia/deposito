@@ -4,7 +4,7 @@ class Triangolo:
     + altezza: float
     - colore: str
     -----------------------------------------------
-    + __init__(base: float, altezza: float) -> None
+    - __init__(base: float, altezza: float) -> None
     + perimetro() -> ...
     + area() -> float
     + set_colore(colore: str) -> None

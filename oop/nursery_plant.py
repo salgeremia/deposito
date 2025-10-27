@@ -5,7 +5,7 @@ class NurseryPlant:
         - pot_size  :   int
         + is_sold   :   bool
         _____________________________________________________
-        + __init__(plant_id: int, name: str) -> None
+        - __init__(plant_id: int, name: str) -> None
         + set_pot_size(pot_size: int) -> None
         + get_pot_size() -> int
         + transplant(pot_size: int) -> None

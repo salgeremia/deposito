@@ -3,7 +3,7 @@ class Character:
         - name  : str
         - age   : int
         _____________________________________________________
-        + __init__(name: str, age: int) -> None
+        - __init__(name: str, age: int) -> None
         + get_name() -> str
         + get_age() -> int
         _____________________________________________________
@@ -25,7 +25,7 @@ class Jedi(Character):
     ''' _____________________________________________________
         - rank  : str
         _____________________________________________________
-        + __init__(name: str, age: int, rank: str) -> None
+        - __init__(name: str, age: int, rank: str) -> None
         + get_rank() -> str
         _____________________________________________________
     '''

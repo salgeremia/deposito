@@ -5,7 +5,7 @@ class HotelRoom:
         + is_occupied :   bool
         - guest_name  :   str
         _____________________________________________________
-        + __init__(room_number: int, room_type: str) -> None
+        - __init__(room_number: int, room_type: str) -> None
         + set_guest_name(guest_name: str) -> None
         + get_guest_name() -> str
         + occupy(guest_name: str) -> None
