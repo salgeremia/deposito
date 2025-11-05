@@ -1,6 +1,6 @@
 class A:
     def __str__(self) -> str:
-        return '> class A'
+        return 'object -> class A'
 
 
 if __name__ == "__main__":
