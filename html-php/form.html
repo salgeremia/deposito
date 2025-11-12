@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="utf-8">
+    <title>Modulo di esempio</title>
+</head>
+<body>
+    <h1>Modulo di registrazione</h1>
+    <form action="submit.php" method="post" target="_blank">
+        <p>
+            <label>Nome:<br>
+                <input type="text" name="nome" required>
+            </label>
+        </p>
+        <p>
+            <label>Cognome:<br>
+                <input type="text" name="cognome" required>
+            </label>
+        </p>
+        <p>
+            <label>Data di nascita:<br>
+                <input type="date" name="data_nascita">
+            </label>
+        </p>
+        <p>
+            <label>Email:<br>
+                <input type="email" name="email">
+            </label>
+        </p>        <p>
+            <label>Telefono:<br>
+                <input type="tel" name="telefono">
+            </label>
+        </p>
+        <p>
+            <label>Note:<br>
+                <textarea name="note" rows="4" cols="40"></textarea>
+            </label>
+        </p>
+        <p>
+            <button type="submit">Invia</button>
+            <button type="reset">Reset</button>
+        </p>
+    </form>
+</body>
+</html>
+
+
+
+<!-- TEST:
+cd {path}/html-php
+php -S localhost:8000
+-->
+
+<!-- APRI NEL BROWSER:
+http://localhost:8000/form.html 
+-->
+
+<!-- PER TERMINARE (3 opzioni):
+1. Ctrl + C
+2. chiudere il terminale
+3. eseguire su nuovo terminale:
+
+lsof -i :8000   # mostra il processo sulla porta 8000
+kill -9 <PID>   # termina il processo (sostituisci <PID> con il numero mostrato)
+
+NB: l'opzione 3. FUNZIONA SEMPRE!
+-->
