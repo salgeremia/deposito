@@ -1,32 +1,32 @@
-# Esercizio pag. 353 n. 5 - reverse_string
-
-'''
-    La classe Pila possiede tre metodi:
-    __init__    -> inizializza l'oggetto come lista vuota;
-    aggiungi    -> aggiunge un elemento alla fine della lista;
-    rimuovi     -> rimuove l'ultimo elemento della lista.
-'''
 class Pila:
     def __init__(self) -> None:
         self.__pila = list()
+
+    def __str__(self) -> str:
+        return str(self.__pila)
     
-    def aggiungi(self, elemento: str) -> None:
+    def inserisci(self, elemento: int) -> None:
         self.__pila.append(elemento)
 
-    def rimuovi(self) -> str:
-        return self.__pila.pop()
+    def rimuovi(self) -> None:
+        self.__pila.pop()
 
+    def lunghezza(self) -> int:
+        return len(self.__pila)
+    
 
-def reverse_string(stringa: str) -> str:
-    '''Restituisce la stringa invertita.'''
-    stringa_invertita = ''
-    pila = Pila()
-    for carattere in testo:
-        pila.aggiungi(carattere)
-    for i in range(len(stringa)):
-        stringa_invertita += pila.rimuovi()
-    return stringa_invertita
+p = Pila()
+print('Inserisci elementi nella pila (per terminare inserire -1)')
+while True:
+    elemento = int(input('elemento = '))
+    if elemento != -1:
+        p.inserisci(elemento)
+    else:
+        break
 
+da_eliminare = int(input('Quanti elementi vuoi eliminare? '))
+if da_eliminare <= p.lunghezza():
+    for _ in range(da_eliminare):
+        p.rimuovi()
 
-testo = input()
-print(reverse_string(testo))
+print(p)
