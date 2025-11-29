@@ -27,6 +27,6 @@ class LinkedList:
 
 
 l_list = LinkedList()
-for _ in range(randint(2, 10)):
-    l_list.append(randint(1, 100))
+l_list.append(7)
+l_list.append(3)
 print(l_list)
