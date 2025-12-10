@@ -1,4 +1,10 @@
 # https://realpython.com/beautiful-soup-web-scraper-python/
+'''
+> BEFORE RUNNING:
+source venv/bin/activate
+> AT THE END:
+deactivate
+'''
 
 import requests
 from bs4 import BeautifulSoup

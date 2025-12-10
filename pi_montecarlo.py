@@ -1,5 +1,4 @@
 import random
-import matplotlib.pyplot as plt
 import time
 
 i = 1
@@ -13,16 +12,3 @@ while i <= 8: # i should be less than 9
     toc = time.time()
     print(f'10^{i}\t{round(toc-tic, 3)} \t-> π = {4*len(int_points)/n}')
     i += 1
-
-
-for i in range(n):
-    if i in int_points:
-        plt.plot(x[i],y[i],'oc')
-    else:
-        plt.plot(x[i],y[i],'or')
-
-plt.axis((0,1,0,1))
-plt.plot(x,y,'o')
-
-plt.show()
-
