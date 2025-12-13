@@ -26,6 +26,6 @@ while abs(a-b) > 0.001:
         elif exist(med, b):
             a = med
         else:
-            print('BABBIONE hai trovato lo zero ->', med)
+            print('Hai trovato lo zero ->', med)
             break
 
