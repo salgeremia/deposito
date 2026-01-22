@@ -21,23 +21,39 @@ class BinarySearchTree:
             return self.right.__contains__(value)      # type: ignore
         
     def insert(self, value: int) -> None:
-        if self.value is None:
-            self.value = value
-            self.left = BinarySearchTree()
-            self.right = BinarySearchTree()
-        else:
-            if value < self.value:
-                self.left.insert(value)     # type: ignore
+        # Modifica richiesta per inserimento valori pari
+        # if value%2 == 0:
+            if self.value is None:
+                self.value = value
+                self.left = BinarySearchTree()
+                self.right = BinarySearchTree()
             else:
-                self.right.insert(value)    # type: ignore  
-
-
-tree = BinarySearchTree()
-tree.insert(6)
-tree.insert(4)
-tree.insert(2)
-tree.insert(8)
-tree.insert(5)
-tree.insert(7)
-print(tree.__contains__(8))
-print(tree)
+                if value < self.value:
+                    self.left.insert(value)     # type: ignore
+                else:
+                    self.right.insert(value)    # type: ignore
+    
+    def count(self, key: int) -> int:
+        counter = 0
+        if self.value is None:
+            return counter
+        elif self.value == key:
+            return 1 + self.right.count(key)    # type: ignore
+        elif key < self.value:
+            return self.left.count(key)         # type: ignore
+        else:
+            return self.right.count(key)        # type: ignore
+                
+        
+if __name__ == "__main__":
+    tree = BinarySearchTree()
+    tree.insert(5)
+    tree.insert(6)
+    tree.insert(10)
+    tree.insert(3)
+    tree.insert(3)
+    tree.insert(4)
+    tree.insert(3)
+    print(tree.__contains__(3))
+    print(tree.count(3))
+    print(tree)
