@@ -21,17 +21,15 @@ class BinarySearchTree:
             return self.right.__contains__(value)      # type: ignore
         
     def insert(self, value: int) -> None:
-        # Modifica richiesta per inserimento valori pari
-        # if value%2 == 0:
-            if self.value is None:
-                self.value = value
-                self.left = BinarySearchTree()
-                self.right = BinarySearchTree()
+        if self.value is None:
+            self.value = value
+            self.left = BinarySearchTree()
+            self.right = BinarySearchTree()
+        else:
+            if value < self.value:
+                self.left.insert(value)     # type: ignore
             else:
-                if value < self.value:
-                    self.left.insert(value)     # type: ignore
-                else:
-                    self.right.insert(value)    # type: ignore
+                self.right.insert(value)    # type: ignore
     
     def count(self, key: int) -> int:
         counter = 0
