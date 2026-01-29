@@ -26,17 +26,17 @@ Sulla base del codice presente nella classe BinarySearchTree (quello originale),
 modificheresti per soddisfare la richiesta?
 '''
 class BinarySearchTree_124(BinarySearchTree):
-    def __init__(self) -> None:
+    def __init__(self, size=0) -> None:
         super().__init__()
-        self.size = 0
+        self.size = size
 
     def insert(self, value: int) -> None:
-        if self.size <= 4:
+        if self.size < 4:
             if self.value is None:
                 self.value = value
-                self.left = BinarySearchTree()
-                self.right = BinarySearchTree()
                 self.size += 1
+                self.left = BinarySearchTree_124(self.size)
+                self.right = BinarySearchTree_124(self.size)
             else:
                 if value < self.value:
                     self.left.insert(value)     # type: ignore
@@ -44,6 +44,7 @@ class BinarySearchTree_124(BinarySearchTree):
                     self.right.insert(value)    # type: ignore
         else:
             print('Albero pieno!')
+
 
 if __name__ == "__main__":
     tree = BinarySearchTree_124()
