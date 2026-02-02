@@ -1,4 +1,4 @@
-'''
+
 # task 0: stampa numeri nell'intervallo [0, n-1], con n letto in input
 n = int(input('Inserire valore n: '))
 for i in range(n):
@@ -13,7 +13,7 @@ print()
 for i in range(n, n**2 + 1):
     if i%2 == 0:
         print(i)
-'''
+
 # task 3: stampa i multipli di x (letto in input) minori di 100
 x = int(input('Inserire valore x: '))
 # for i in range(x, 100, x):
