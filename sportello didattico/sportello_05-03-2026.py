@@ -34,7 +34,7 @@ while valore < 15 or valore > 39:
     valore = int(input('Inserire temperatura della serra: '))
 print('Temperatura corretta!')
 
-# Lezione 2 - Costrutto iterativo indefinito FOR
+# Lezione 2 - Costrutto iterativo definito FOR
 
 # Esempio 1: stampare i singoli elementi da una lista.
 colori = ['rosso', 'blu', 'viola', 'giallo', 'verde']
