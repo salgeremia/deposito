@@ -13,9 +13,17 @@ print("Il valore minimo è", minimo)
     - dividere per il numero di elementi
 '''
 somma = sum(l)
-lunghezza = len(l)
-media = somma/lunghezza
+numero_valori = len(l)
+media = somma/numero_valori
 print("La media dei valori è:", media)
+
+# 3. Conta quanti valori della lista sono uguali a zero
+lista = [0, 1, 1, 0, 1, 1, 0]
+conta = 0
+for elemento in lista:
+    if elemento == 0:
+        conta += 1
+print("Sono presenti", conta, "zeri")
 
 # Funzioni matematiche
 # 1. Calcolare la potenza di un numero
