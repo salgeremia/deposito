@@ -2,6 +2,13 @@ import turtle as t
 
 t.speed(0)
 
+# CIRCONFERENZA = raggio 100
+t.color('blue')
+t.pensize(5)
+t.penup()
+t.goto(0, -100)
+t.pendown()
+t.circle(100)
 
 # ELICA = triangolo verde x 4
 t.fillcolor('lightgreen')
@@ -22,14 +29,6 @@ for i in range(6):
         t.left(120)
     t.left(60)
 t.end_fill()
-
-# CIRCONFERENZA = raggio 100
-t.color('blue')
-t.pensize(5)
-t.penup()
-t.goto(0, -100)
-t.pendown()
-t.circle(100)
 
 t.hideturtle()
 
