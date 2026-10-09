@@ -1,4 +1,4 @@
-s = input('Testo da cifrare: ')
+s = input('Parola da cifrare: ')
 k = int(input('Chiave di cifratura: '))
 
 s_cifrata = ''

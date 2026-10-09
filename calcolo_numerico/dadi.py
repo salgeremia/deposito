@@ -1,3 +1,4 @@
+# Metodo Monte Carlo
 import random as r
 
 def spin_dice(n_spins):

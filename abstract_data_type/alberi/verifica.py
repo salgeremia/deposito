@@ -30,7 +30,7 @@ class BinarySearchTree_124(BinarySearchTree):
         super().__init__()
 
     def insert(self, value: int) -> None:
-        if self.size() < 4:
+        if self.size() < 124:
             if self.value is None:
                 self.value = value
                 self.left = BinarySearchTree_124()
