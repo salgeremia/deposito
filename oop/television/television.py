@@ -16,13 +16,9 @@ class Television:
     # Definisci il metodo inizializzatore per inizializzare lo stato del televisore.
     def __init__(self, state: bool, channel: int, volume: int) -> None:
         '''Inizializza lo stato del televisore.'''
-        # self.set_state(state)
         self.__state = state
-        self.__channel = self.set_channel(channel)
-        self.__volume = self.set_volume(volume)
-        '''Gli altri attributi assumono valori di default.'''
-        # self.__channel = 1
-        # self.__volume = 0
+        self.set_channel(channel)
+        self.set_volume(volume)
 
     # Applica l'incapsulamento, nascondendo gli attributi e aggiungendo i metodi getter e setter
     # per ottenere e modificare ciascun attributo, verificando che i valori impostati dai metodi
@@ -57,6 +53,7 @@ class Television:
     def get_volume(self) -> int:
         '''Restituisce il volume del televisore.'''
         return self.__volume
+     
     ''' - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - '''
     # Aggiungi, inoltre i metodi next_channel() e prev_channel(), per passare al canale
     # precedente/successivo...
@@ -94,5 +91,7 @@ class Television:
 
 
 '''Esempio di utilizzo della classe Television.'''
-t = Television(True, 1250, 300)
+t = Television(True, 40, 50)
 print(t)
+t.next_channel()
+print(t.get_channel())
