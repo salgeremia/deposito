@@ -1,14 +1,11 @@
-import random
-import time
+import random as r
 
-i = 1
-print('#p\ttime')
-while i <= 8: # i should be less than 9
-    tic = time.time()
-    n = 10**i
-    x = [random.random() for _ in range(n)]
-    y = [random.random() for _ in range(n)]
-    int_points = [d for d in range(n) if (x[d]**2+y[d]**2)**0.5 < 1]
-    toc = time.time()
-    print(f'10^{i}\t{round(toc-tic, 3)} \t-> π = {4*len(int_points)/n}')
-    i += 1
+punti_interni = 0
+punti_totali = 50_000_000
+
+for _ in range(punti_totali):
+    x, y = r.random(), r.random()
+    if x**2 + y **2 <= 1:
+        punti_interni += 1
+print(punti_interni, punti_totali)
+print('pi greco =', 4*punti_interni/punti_totali)
